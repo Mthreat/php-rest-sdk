@@ -61,11 +61,11 @@ If send is successful, a unique tracking code returned and you can track your me
 ```php
 $bulkID = "message-tracking-code";
 
-$message = $client->get_message($bulkID);
+$message = $client->getMessage($bulkID);
 
 echo $message->status;   // get message status
 echo $message->cost;     // get message cost
-echo $message->payback;  // get message payback
+echo $message->paybackCost;  // get message payback
 ```
 
 ### Get message delivery statuses
